@@ -23,16 +23,28 @@ public abstract class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBe
         }
     }
 
+    /// <summary>
+    /// <remake>
+    ///   If you are overriding this method, include the following snippet:
+    ///   base.Awake();
+    ///   if( Instance != this )
+    ///       return;
+    /// </remake>
+    /// </summary>
     protected virtual void Awake()
     {
-        if (instance == null)
+        if (instance != null)
         {
-            instance = this as T;
-            DontDestroyOnLoad(gameObject);
+            Destroy(this);
+            return;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this as T;
+        DontDestroyOnLoad(this);
+    }
+
+    protected virtual void OnDestroy()
+    {
+        if (ReferenceEquals(instance, this))
+            instance = null;
     }
 }
