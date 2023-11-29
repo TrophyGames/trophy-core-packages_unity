@@ -1,0 +1,1 @@
+Contains all scripts for printing logs to the console.

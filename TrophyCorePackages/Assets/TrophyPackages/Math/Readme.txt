@@ -1,0 +1,1 @@
+TrophyMath.cs contains a bunch of math related methods and constants for the most used floats and ints.
