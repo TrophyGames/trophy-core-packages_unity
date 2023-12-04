@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4033137b01f139345b5348914c90fd96, type: 3}
+  m_Name: Mobile
+  m_EditorClassIdentifier: 
+  enableDynamicQualityManagement: 1
+  minQualityTier: 0
+  defaultQualityTier: 2
+  maxQualityTier: 3
+  maxFramerate: 30
+  maxDpi: 400
+  minRenderScales:
+  - 0.6
+  - 0.8
+  - 1
+  - 1
+  - 1
+  useRenderScaleForRT: 0
+  renderTextureFormat: 8
+  renderTextureFormatFallback: 0
+  forceMonoAudioTiers: 0100000000
+  enabledAntialiasing: 0
+  enabledVSync: 0
+  aaSettings:
+  - qualityTier: 0
+    aaMode: 0
+    aaQuality: 0
+  - qualityTier: 1
+    aaMode: 0
+    aaQuality: 0
+  - qualityTier: 2
+    aaMode: 0
+    aaQuality: 0
+  - qualityTier: 3
+    aaMode: 0
+    aaQuality: 0
+  - qualityTier: 4
+    aaMode: 0
+    aaQuality: 0
